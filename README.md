@@ -1,5 +1,6 @@
 # Supplementary Materials: **An exactly solvable Ekman layer with a fractional-order stress closure**
 
+[![DOI](https://zenodo.org/badge/1375736206.svg)](https://doi.org/10.5281/zenodo.22830988)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
 [![NumPy](https://img.shields.io/badge/NumPy-%E2%89%A51.24-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org)
 [![SciPy](https://img.shields.io/badge/SciPy-%E2%89%A51.10-8CAAE6?style=flat-square&logo=scipy&logoColor=white)](https://scipy.org)

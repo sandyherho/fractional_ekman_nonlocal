@@ -1,4 +1,25 @@
-outputs/
+# Byte-compiled and packaging artifacts
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors and notebooks
 .ipynb_checkpoints/
+.vscode/
+.idea/
+*.swp
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Note: outputs/ is deliberately NOT ignored. Figures, CSVs, and reports are
+# committed so the results can be inspected without running anything.

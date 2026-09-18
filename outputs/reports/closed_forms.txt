@@ -1,0 +1,70 @@
+Closed-form quantities of the nonlocal Ekman layer
+==================================================
+
+characteristic root, angles, and the transient exponent
+-------------------------------------------------------
+  gamma | arg p0 (deg) |  theta (deg) | arg psi(inf) | turn mod 360 |  a = g/(1+g)
+  ----------------------------------------------------------------------------------------
+   0.10 |   81.8181818 |   -8.1818182 |  -98.1818182 |       -90.00 |  0.0909090909
+   0.20 |   75.0000000 |  -15.0000000 | -105.0000000 |       -90.00 |  0.1666666667
+   0.30 |   69.2307692 |  -20.7692308 | -110.7692308 |       -90.00 |  0.2307692308
+   0.40 |   64.2857143 |  -25.7142857 | -115.7142857 |       -90.00 |  0.2857142857
+   0.50 |   60.0000000 |  -30.0000000 | -120.0000000 |       -90.00 |  0.3333333333
+   0.60 |   56.2500000 |  -33.7500000 | -123.7500000 |       -90.00 |  0.3750000000
+   0.70 |   52.9411765 |  -37.0588235 | -127.0588235 |       -90.00 |  0.4117647059
+   0.80 |   50.0000000 |  -40.0000000 | -130.0000000 |       -90.00 |  0.4444444444
+   0.90 |   47.3684211 |  -42.6315789 | -132.6315789 |       -90.00 |  0.4736842105
+   1.00 |   45.0000000 |  -45.0000000 | -135.0000000 |          n/a |  0.5000000000
+
+measured winding number
+-----------------------
+  gamma | net turning (deg) |  n  | residual from -90-360n
+  ------------------------------------------------------------------
+  0.200 |          -86.9365 |   0 |                +3.0635
+  0.400 |          -89.2850 |   0 |                +0.7150
+  0.600 |          -89.8653 |   0 |                +0.1347
+  0.800 |          -89.9829 |   0 |                +0.0171
+  0.900 |          -89.9974 |   0 |                +0.0026
+  0.910 |         -449.9982 |   1 |                +0.0018
+  0.950 |         -450.0002 |   1 |                -0.0002
+  0.990 |         -449.9918 |   1 |                +0.0082
+  0.995 |         -449.9807 |   1 |                +0.0193
+  0.999 |         -809.8935 |   2 |                +0.1065
+
+  The residual is set by truncation at finite depth, not by the
+  identity: it shrinks monotonically as the deep limit is
+  approached and is below 0.01 degrees wherever the algebraic tail
+  has taken over.
+
+  n is measured, not derived.  It counts the complete revolutions
+  the velocity vector makes before the algebraic tail fixes its
+  direction, and is governed by the crossover between the
+  exponentially decaying core and that tail.  Since the tail
+  amplitude carries 1/Gamma(1-gamma) and vanishes at gamma = 1, the
+  crossover depth and therefore n grow without bound as
+  gamma -> 1.  No closed form for n is claimed.
+
+identities
+----------
+  theta(gamma)       = -(pi/2) gamma/(1+gamma)   [surface deflection]
+  arg psi(inf)       = pi/[2(1+gamma)] - pi      [deep asymptote]
+  arg psi(inf) - arg psi(0) = -pi/2 (mod 2 pi), every gamma < 1
+  delta_gamma        = (K_gamma/f)^(1/(1+gamma)) [depth scale]
+  psi(0)             = tau p0/(i f rho)
+  A_gamma            = tau (p0/b)/Gamma(1-gamma) [tail amplitude]
+  psi(0,t)           = psi(0,inf) P(a, i f t), a = gamma/(1+gamma)
+  envelope exponent  = a - 1 = -1/(1+gamma)
+
+  The tail amplitude carries the factor 1/Gamma(1-gamma), which
+  vanishes at gamma = 1.  That is the exact mechanism by which the
+  algebraic far field disappears in the classical limit and the
+  winding becomes unbounded.  The limit gamma -> 1 is therefore
+  singular, not continuous.
+
+  Only the modulo-2pi statement is exact.  The NET turning is
+  -90 - 360 n degrees, and n is not identically zero: it is 0 up to
+  gamma of about 0.90, 1 from about 0.91 to 0.995, and at least 2
+  by gamma = 0.999.  Any claim that the spiral makes exactly a
+  quarter turn at every gamma < 1 is false, and the divergence of n
+  is how the unbounded classical winding is approached.
+

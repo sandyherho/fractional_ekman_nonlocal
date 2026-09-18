@@ -1,0 +1,45 @@
+Open items and negative results
+===============================
+
+a claim that was tested and had to be corrected
+-----------------------------------------------
+  The quarter-turn result was first stated as: the total turning of
+  psi from surface to bottom is exactly -90 degrees for every
+  gamma < 1.  That is false.  Only the modulo-2pi statement
+  survives.  Measuring the unwrapped turning out to zeta = 1e4
+  gives -450 degrees at gamma = 0.95 and -810 degrees at
+  gamma = 0.999, that is one and two complete extra revolutions.
+  The corrected statement is that the deep direction is a quarter
+  turn from the surface direction modulo 2 pi at every gamma, while
+  the winding number n(gamma) is a non-decreasing integer that
+  diverges as gamma -> 1.  The earlier version was checked only to
+  zeta = 1e3 and only up to gamma = 0.9, which is below the first
+  threshold.
+
+what was tested and did not hold
+--------------------------------
+  The second root of p^mu = b enters the principal sheet at
+  gamma = 1/2.  That crossing was expected to mark a qualitative
+  change in the approach to the deep asymptote.  It does not.  The
+  overshoot beyond the quarter turn grows smoothly through
+  gamma = 1/2, measuring 3.0 degrees at gamma = 0.4 and 8.2 degrees
+  at gamma = 0.5, with no discontinuity in value or slope.  The
+  crossing has no reported signature.
+
+assumption carried by the whole construction
+--------------------------------------------
+  The Caputo derivative in the closure is based at the surface, so
+  the stress at depth depends on the shear above it and not below.
+  That is a modeling choice justified by the direction of momentum
+  input, not a derived property.  A Riesz (symmetric) closure would
+  forfeit the Laplace-transform solution and change the surface
+  condition; what it gives instead is not addressed here.
+
+not addressed
+-------------
+  K_gamma is a constant of the closure and is not derived from any
+  eddy statistics.  No calibration against observations or
+  large-eddy simulation is attempted, and none of the numbers here
+  is a measurement.  The problem is linear, horizontally
+  homogeneous, and unstratified.
+

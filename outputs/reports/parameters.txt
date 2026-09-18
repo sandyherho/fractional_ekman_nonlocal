@@ -1,0 +1,54 @@
+Symbols, units, and reference values
+====================================
+
+units, and what is comparable across gamma
+------------------------------------------
+  Every plotted and tabulated quantity is DIMENSIONLESS.  The
+  reference case is f = 1, K_gamma = 1, rho = 1, and tau = 1
+  aligned with +x, so delta_gamma = 1 by construction.  Scaling
+  zeta by delta_gamma, psi by |tau| delta_gamma^gamma/(rho
+  K_gamma), t by 1/f and T by |tau| reduces the problem to one that
+  depends on gamma alone.
+
+  The closure coefficient K_gamma carries units of m^(1+gamma)
+  s^-1, so it is a DIMENSIONALLY DIFFERENT quantity at each gamma.
+  Setting K_gamma = 1 therefore does not fix a common physical
+  mixing strength across the family, and the absolute depth scale
+  delta_gamma = (K_gamma/f)^(1/(1+gamma)) is not comparable between
+  different gamma at fixed numerical K_gamma.
+
+  What IS comparable across gamma, because it is independent of
+  K_gamma entirely: the surface deflection angle, the deep
+  asymptotic direction, the turning, the winding number, the decay
+  exponent 1+gamma, the spin-up exponent a, and every ratio plotted
+  against zeta/delta_gamma.  These are the results the study
+  reports.
+
+  What is NOT comparable across gamma at fixed numerical K_gamma:
+  the absolute value of delta_gamma in metres, the absolute surface
+  speed, and the absolute magnitude of the stress at a given depth
+  in metres.  None of these is reported as a physical number
+  anywhere here.
+
+  Figure 1(a) plots zeta^gamma times the kernel, which removes its
+  m^-gamma units and is the only form in which the kernel may be
+  compared across gamma.  Figure 1(b) uses a synthetic test profile
+  whose scale is arbitrary; only its slope carries meaning.
+
+symbols
+-------
+  zeta        depth below the surface, positive downward
+  psi         complex velocity u + i v
+  T           complex stress T_x + i T_y
+  tau         surface wind stress
+  gamma       order of the Scott-Blair closure, 0 < gamma <= 1
+  mu          1 + gamma, order of the governing equation
+  K_gamma     closure coefficient, m^(1+gamma) s^-1, gamma dependent
+  b           i f / K_gamma
+  p0          b^(1/mu), the right-half-plane characteristic root
+  delta_gamma (K_gamma/f)^(1/mu), generalized Ekman depth
+  a           gamma/(1+gamma), spin-up exponent
+  n           winding number of the velocity vector
+  M           Talbot contour nodes (32)
+  h           product-integration grid spacing
+

@@ -171,7 +171,7 @@ single switch-on.
 
 ## Authors
 
-Sandy H. S. Herho, Rusmawan Suwarman, Deny J. Puradimaja, Dasapta E. Irawan
+Sandy H. S. Herho, Iwan P. Anwar, Rusmawan Suwarman, Deny J. Puradimaja, Dasapta E. Irawan
 
 ## License
 

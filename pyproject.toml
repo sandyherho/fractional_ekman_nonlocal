@@ -11,6 +11,7 @@ requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
     { name = "Sandy H. S. Herho" },
+    {name="Rizki Dimas Permana"},
     { name = "Iwan P. Anwar" },
     { name = "Rusmawan Suwarman" },
     { name = "Deny J. Puradimaja" },

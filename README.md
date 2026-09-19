@@ -154,7 +154,7 @@ single switch-on.
 
 ## Authors
 
-Sandy H. S. Herho, Iwan P. Anwar, Rusmawan Suwarman, Deny J. Puradimaja,
+Sandy H. S. Herho, Rizki Dimas Permana, Iwan P. Anwar, Rusmawan Suwarman, Deny J. Puradimaja,
 Dasapta E. Irawan
 
 ## License
